@@ -10,9 +10,9 @@
     <script> // don't forget to add script tags in order to write javascript!
         var cakeornocake = prompt("Do you want cake? (yes/no)"); // create variable, store user data in variable
 
-        if (cakeornocake === "yes") { // if: the main condition I'm looking for
+        if (cakeornocake === "yes" || cakeornocake === "Yes" || cakeornocake === "YES" || cakeornocake === "yeah") { // if: the main condition I'm looking for
             console.log("Okay, then have some cake");
-        } else if (cakeornocake === "no") { // else if: another condition I am trying to control for
+        } else if (cakeornocake === "no" || cakeornocake === "No" || cakeornocake === "NO" || cakeornocake === "nah") { // else if: another condition I am trying to control for
             console.log("NO CAKE FOR YOU!");
         } else { //else: anything that is not a condition I am trying to control for
             console.log("Please just answer the question.");
