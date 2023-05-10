@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimme My Number</title>
+</head>
+<body>
+    <script>
+        var userstring = prompt("Gimme a number that is greater than 100");
+        var usernum = parseInt(userstring, 10);
+
+        while (usernum < 99) {
+            // statement for when termination is NOT true, keep the loop going
+            // constanty looking at the number the user puts until the condition is met
+            console.log(usernum + "is less than 100, dummy. Try again, I've got all day");
+            userstring = prompt("its less than 100, dummy. Try again, I've got all day");
+            usernum = parseInt(userstring, 10);        
+            // Keep asking the user until they enter the desired type of number
+        }
+
+        console.log(usernum + " is greater than 100! Great job!");
+    </script>
+    
+</body>
+</html>

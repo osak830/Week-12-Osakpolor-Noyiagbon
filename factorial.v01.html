@@ -9,9 +9,22 @@
 <body>
     <script>
        // An iterative example of the factorial function
-       var total = 1;
-      
-       // We'll come back to this after we've seen for loops...
+       // FACTORIAL: 5! = 5 * 4 * 3 * 2 * 1 = 120
+       function factorial(n) { //if n = 5
+            //defiinition of our factorial function
+            var total = 1;
+            for (i = 0; i < n; i++) { // i = 0, 1, 2, 3, 4
+                total = total * (n - i); // total = 5,
+                // console.log("current value of total is: " + total); //debug step
+            }
+            return total; //final value of total when the function is called
+       }
+        var userstring = prompt("Number please");
+        var usernum = parseInt(userstring); //turn it into an integer
+
+        console.log(usernum + "! is " + factorial(usernum)); //function call
+
+
        
     </script>
 </body>
